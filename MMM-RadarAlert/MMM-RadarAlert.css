@@ -1,0 +1,55 @@
+.radar-wrapper {
+    margin: 10px auto;
+    border: 5px solid red;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    transition: border-color 0.5s ease;
+  }
+  
+  .flash-border {
+    animation: flash-border 1s infinite;
+  }
+  
+  @keyframes flash-border {
+    0% {
+      border-color: red;
+    }
+    50% {
+      border-color: transparent;
+    }
+    100% {
+      border-color: red;
+    }
+  }
+  
+  .slide-in {
+    animation: slide-in 0.5s forwards;
+  }
+  
+  @keyframes slide-in {
+    from {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .slide-out {
+    animation: slide-out 0.5s forwards;
+  }
+  
+  @keyframes slide-out {
+    from {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    to {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+  }
+  
