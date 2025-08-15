@@ -39,7 +39,7 @@ Module.register("MMM-RadarAlert", {
       rainviewerFrameInterval: 300, // ms per frame when animating the radar loop
   
       // Alert filtering
-      alertTypes: ["Tornado Warning", "Severe Thunderstorm Warning", "Flash Flood Warning"],
+      alertTypes: ["Tornado Warning", "Severe Thunderstorm Warning", "Flash Flood Warning", "Heat Advisory"],
   
       // Visual/audio
       soundFile: "modules/MMM-RadarAlert/alert.mp3",
